@@ -1,0 +1,427 @@
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 15px;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  body {
+    font-family: Arial,Helvetica,sans-serif;
+  }
+  
+  .active {
+    display: none;
+  }
+  
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .header .burger {
+    display: none;
+  }
+  
+  .header .burger .menu {
+    border: none;
+    background: transparent;
+  }
+  
+  .header .burger img {
+    max-width: 24px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .header .logo {
+    padding-top: 15px;
+  }
+  
+  .menu__list {
+    display: block;
+    font-size: 16px;
+    background-color: #f7f7f7;
+  }
+  
+  .menu__list .items li {
+    color: #7c788a;
+    display: inline-block;
+    padding: 10px 15px;
+  }
+  
+  .menu__list .items li .tri {
+    color: #e11e70;
+  }
+  
+  .main {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  
+  .main .main__title {
+    padding: 0 15px;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  
+  .main .form {
+    padding: 0 15px;
+    width: 360px;
+  }
+  
+  .main .form .form__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 19px 0;
+  }
+  
+  .main .form .nomer_zayavki {
+    font-weight: 700;
+  }
+  
+  .main .form .nomer_zayavki span {
+    color: #cc0000;
+    font-weight: 700;
+  }
+  
+  .main .form .nomer_zayavki .nomer_zayavki-input {
+    margin-top: 3px;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  }
+  
+  .main .form .parol {
+    margin-top: 10px;
+    font-weight: 700;
+  }
+  
+  .main .form .parol span {
+    color: #cc0000;
+    font-weight: 700;
+  }
+  
+  .main .form .parol .parol-input {
+    color: black;
+    font-weight: 700;
+    margin-top: 3px;
+    width: 100%;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  
+  .main .form .view__results {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #e21e70;
+    line-height: 21px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  .full {
+    display: none;
+    text-align: center;
+  }
+  
+  .full .full_icon {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  .full .full__main {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 775px) {
+    .container {
+      max-width: 1200px;
+      margin: 10px auto;
+      padding: 5px 10px;
+    }
+    .active {
+      display: none;
+    }
+    .header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+    .header .burger {
+      display: inline-block;
+    }
+    .header .burger img {
+      max-width: 20px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .header .logo {
+      padding: 15px 0;
+      max-width: 300px;
+      padding-left: 15px;
+    }
+    .menu__list {
+      font-size: 16px;
+      background-color: #f7f7f7;
+    }
+    .menu__list .menu__item {
+      text-align: center;
+    }
+    .menu__list .items li {
+      color: #7c788a;
+      display: inline-block;
+      padding: 10px 15px;
+    }
+    .menu__list .items li .tri {
+      color: #e11e70;
+    }
+    .main {
+      padding-top: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+    }
+    .main .main__title {
+      padding: 10px 15px;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    .main .form {
+      padding: 0 5px;
+      width: 100%;
+    }
+    .main .form .form__title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 19px 0;
+    }
+    .main .form .nomer_zayavki {
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .main .form .nomer_zayavki span {
+      color: #cc0000;
+      font-weight: 700;
+    }
+    .main .form .nomer_zayavki .nomer_zayavki-input {
+      width: 100%;
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 6px 12px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    }
+    .main .form .parol {
+      font-size: 0.8rem;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+    .main .form .parol span {
+      color: #cc0000;
+      font-weight: 700;
+    }
+    .main .form .parol .parol-input {
+      width: 100%;
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 6px 12px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    }
+    .main .form .view__results {
+      margin: 20px 0;
+      width: 100%;
+      padding: 6px 12px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      display: inline-block;
+      background-color: #e21e70;
+      line-height: 21px;
+      text-decoration: none;
+      cursor: pointer;
+      color: #ffffff;
+    }
+    .full {
+      display: block;
+      text-align: center;
+    }
+    .full .full_icon {
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .full .full__main {
+      vertical-align: middle;
+      display: inline-block;
+    }
+  }
+  
+  @media screen and (max-width: 390px) {
+    .form {
+      padding: 0;
+      width: 100%;
+    }
+    .form .form__title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 19px 0;
+    }
+    .form .nomer_zayavki {
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .form .nomer_zayavki span {
+      color: #cc0000;
+      font-weight: 700;
+    }
+    .form .nomer_zayavki .nomer_zayavki-input {
+      width: 100%;
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 6px 12px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    }
+    .form .parol {
+      font-size: 0.8rem;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+    .form .parol span {
+      color: #cc0000;
+      font-weight: 700;
+    }
+    .form .parol .parol-input {
+      width: 100%;
+      display: block;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 6px 12px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+              box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2px auto;
+      padding: 0 1px;
+    }
+    .menu__list {
+      font-size: 12px;
+      background-color: #f7f7f7;
+    }
+    .menu__list .menu__item {
+      text-align: center;
+    }
+    .menu__list .items li {
+      color: #7c788a;
+      display: inline-block;
+      padding: 10px 2px;
+    }
+    .menu__list .items li .tri {
+      color: #e11e70;
+      clear: both;
+    }
+  }
+  /*# sourceMappingURL=style.css.map */

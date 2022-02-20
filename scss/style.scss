@@ -1,0 +1,370 @@
+// -------------------Базовые настройки
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 15px;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+li {
+    list-style-type: none;
+}
+button {
+    cursor: pointer;
+}
+body {
+    font-family: Arial,Helvetica,sans-serif;
+}
+.active {
+    display: none;
+}
+// -------------------Header
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .burger {
+        display: none;
+        .menu {
+            border: none;
+            background: transparent;
+        }
+        img {
+            max-width: 24px;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+    .logo {
+        padding-top: 15px;
+    }
+}
+.menu__list {
+    display: block;
+    font-size: 16px;
+    background-color: #f7f7f7;
+    .items {
+        li {
+            color: #7c788a;
+            display: inline-block;
+            padding: 10px 15px;
+            .tri {
+                color: #e11e70;
+            }
+        }
+    }
+}
+// ----------------------Main
+.main {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    .main__title {
+        padding: 0 15px;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    .form {
+        padding: 0 15px;
+        width: 360px;
+        .form__title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 19px 0;
+        }
+        .nomer_zayavki {
+            font-weight: 700;
+            span {
+                color: #cc0000;
+                font-weight: 700;
+            }
+            .nomer_zayavki-input {
+                margin-top: 3px;
+                width: 100%;
+                display: block;
+                font-size: 14px;
+                line-height: 21px;
+                padding: 6px 12px;
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            }
+        }
+        .parol {
+            margin-top: 10px;
+            font-weight: 700;
+            span {
+                color: #cc0000;
+                font-weight: 700;
+            }
+            .parol-input {
+                color: black;
+                font-weight: 700;
+                margin-top: 3px;
+                width: 100%;
+                display: block;
+                font-size: 14px;
+                line-height: 21px;
+                padding: 6px 12px;
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                // box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                // transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            }
+        }
+        .view__results {
+            font-size: 14px;
+            text-align: center;
+            margin: 20px 0;
+            width: 100%;
+            padding: 6px 12px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            display: inline-block;
+            background-color: #e21e70;
+            line-height: 21px;
+            text-decoration: none;
+            cursor: pointer;
+            color: #ffffff;
+        }
+    }
+}
+.full {
+    display: none;
+    text-align: center;
+    .full_icon {
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .full__main {
+        vertical-align: middle;
+        display: inline-block;
+    }
+}
+@media screen and (max-width:775px) {
+    .container {
+        max-width: 1200px;
+        margin: 10px auto;
+        padding: 5px 10px;
+    }
+    .active {
+        display: none;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .burger {
+            display: inline-block;
+            img {
+                max-width: 20px;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
+        .logo {
+            padding: 15px 0;
+            max-width: 300px;
+            padding-left: 15px;
+        }
+    }
+    .menu__list {
+        font-size: 16px;
+        background-color: #f7f7f7;
+        .menu__item {
+            text-align: center;
+        }
+        .items {
+            li {
+                color: #7c788a;
+                display: inline-block;
+                padding: 10px 15px;
+                .tri {
+                    color: #e11e70;
+                }
+            }
+        }
+    }
+    .main {
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        .main__title {
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .form {
+            padding: 0 5px;
+            width: 100%;
+            .form__title {
+                font-size: 0.8rem;
+                font-weight: 700;
+                padding: 19px 0;
+            }
+            .nomer_zayavki {
+                font-size: 0.8rem;
+                font-weight: 700;
+                span {
+                    color: #cc0000;
+                    font-weight: 700;
+                }
+                .nomer_zayavki-input {
+                    width: 100%;
+                    display: block;
+                    font-size: 14px;
+                    line-height: 21px;
+                    padding: 6px 12px;
+                    background-color: #ffffff;
+                    border: 1px solid #cccccc;
+                    border-radius: 4px;
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                }
+            }
+            .parol {
+                font-size: 0.8rem;
+                margin-top: 10px;
+                font-weight: 700;
+                span {
+                    color: #cc0000;
+                    font-weight: 700;
+                }
+                .parol-input {
+                    width: 100%;
+                    display: block;
+                    font-size: 14px;
+                    line-height: 21px;
+                    padding: 6px 12px;
+                    background-color: #ffffff;
+                    border: 1px solid #cccccc;
+                    border-radius: 4px;
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                }
+            }
+            .view__results {
+                margin: 20px 0;
+                width: 100%;
+                padding: 6px 12px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                display: inline-block;
+                background-color: #e21e70;
+                line-height: 21px;
+                text-decoration: none;
+                cursor: pointer;
+                color: #ffffff;
+            }
+        }
+    }
+    .full {
+        display: block;
+        text-align: center;
+        .full_icon {
+            vertical-align: middle;
+            display: inline-block;
+        }
+        .full__main {
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}
+@media screen and (max-width:390px) {
+    .container{
+        margin: 10px;
+    }
+    .form {
+        padding: 0 ;
+        width: 100%;
+        .form__title {
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 19px 0;
+        }
+        .nomer_zayavki {
+            font-size: 0.8rem;
+            font-weight: 700;
+            span {
+                color: #cc0000;
+                font-weight: 700;
+            }
+            .nomer_zayavki-input {
+                width: 100%;
+                display: block;
+                font-size: 14px;
+                line-height: 21px;
+                padding: 6px 12px;
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            }
+        }
+        .parol {
+            font-size: 0.8rem;
+            margin-top: 10px;
+            font-weight: 700;
+            span {
+                color: #cc0000;
+                font-weight: 700;
+            }
+            .parol-input {
+                width: 100%;
+                display: block;
+                font-size: 14px;
+                line-height: 21px;
+                padding: 6px 12px;
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+            }
+        }
+    }
+    .container {
+        max-width: 1200px;
+        margin: 2px auto;
+        padding: 0 1px;
+    }
+    .menu__list {
+        font-size: 12px;
+        background-color: #f7f7f7;
+        .menu__item {
+            text-align: center;
+        }
+        .items {
+            li {
+                color: #7c788a;
+                display: inline-block;
+                padding: 10px 2px;
+                .tri {
+                    color: #e11e70;
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
